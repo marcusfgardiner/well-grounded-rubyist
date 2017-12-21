@@ -1,4 +1,7 @@
 # Practical examples of what reassignment means VERSUS changing the underlying values of objects
+# Each ruby object has a unique object id. a and b refer to these unique object IDs, but are not these unique object ids
+# Therefore, when you do a=b, the value of the true object that sits behind a with a unique object id changes values, but there is still a separate unique object sitting behind b
+# Therefore, when you then change the value of b, the value of the unique object b refers to changes, but the value of the unique object behind b does not
 
 2.3.0 :001 > a = 3
  => 3 
