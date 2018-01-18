@@ -19,4 +19,11 @@ args_unleashed(1,2,3)
 
 # #the most important thing to take away from these examples is the perhaps obvious point that,
 # no matter what you do, every parameter ends up bound to some value.
-# even if its just bound to an empty array like *c can be when there are no arguments for it to sponge
+# even if its just bound to an empty array which *c can be when there are no arguments for it to sponge
+
+
+# # What you can’t do is put the argument sponge to the left of any default-valued arguments.
+ # If you do thie below => syntax error
+
+def broken_args(x,*y,z=1)
+end
