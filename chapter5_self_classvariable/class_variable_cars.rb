@@ -1,14 +1,15 @@
 class  Car
 # Key with these class variables -> want to be able to have variables that can be used across the below different instance methods and class methods
+# (could also be used in other levels of the same class hierarchy)
     @@makes = []
     # this is a hash storing keys and values
     @@cars = {}
     @@total_count = 0
-    
+
     # reader attribute = can ask instances what make they are and they will return the make
     attr_reader :make
-    
-    # Use 'self' rather than 'Car' for the class method definition so that it is more flexible. 
+
+    # Use 'self' rather than 'Car' for the class method definition so that it is more flexible.
     # With this format, could use this class method definition in ANY class and it would still work, not just in the Car class
 ##### Can use this class variable in this class method
     def self.total_count
@@ -46,4 +47,3 @@ Car.add_make("Ford")
 h = Car.new("Honda")
 f = Car.new("Ford")
 h2 = Car.new("Honda")
-            

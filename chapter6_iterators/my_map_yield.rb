@@ -6,7 +6,7 @@ class Array
             acc << yield(self[c])
             c += 1
         end
-#Return the accumulated array, as map does (whereas each returns the original array)        
+#Return the accumulated array, as map does (whereas each returns the original array)
         acc
     end
 end
